@@ -10,7 +10,7 @@ public class Process {
         List<Place> places = ApiClient.getPlaces();
         List<Preference> preferences = ApiClient.getPreferences();
 
-        // Convertir les classements en objets Etudiant
+        // Convertir les classements en Etudiant
         List<Etudiant> etudiants = ApiClient.convertirClassementsEnEtudiants(classements, preferences);
 
         // Utiliser les données récupérées pour attribuer les stages
